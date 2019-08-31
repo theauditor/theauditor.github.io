@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Monochrome | A minimal, responsive Jekyll blog theme</title>
+ <link href="http://www.dyutibarma.github.io/monochrome/atom.xml" rel="self"/>
+ <id>http://www.dyutibarma.github.io/monochrome</id>
+ <updated>2019-08-31T21:20:36+05:30</updated>
+ <author>
+   <name>GamPhi</name>
+   <uri>https://blaisemcrowly.com</uri>
+   <email>me@blaisemcrowly.com</email>
+ </author>
+
+ 
+
+</feed>
