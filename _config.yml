@@ -1,28 +1,25 @@
 # The main config file for your Jekyll template
 
 # Site settings
-title: Jackal               # used for the html title of every page
-desc: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Blaise M Crowly               # used for the html title of every page
+desc: Hacker, Entrepreneur, Abstract Poet, Cyber security consultant and nature monk. 
 
-url: http://jackal.com      # put your website hosting url here
+url: https://blaisemcrowly.com      # put your website hosting url here
 baseurl: ''                 # the subpath of your site, e.g. /blog
 permalink: /:year/:title/   # how should we display posts url
 
 # Meta settings
-email: jackal@gmail.com
-author: The Jackal
-twitter_username: clenemt
-github_username: clenemt
-github_source: jackal
+email: blaise@blaisemcrowly.com
+author: Blaise
+twitter_username: blaisemcrowly
+github_username: theauditor
+github_source: 
 
 # Put your ga tracking code below
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'G-QT58M4JXJ4'
 
 # Pagination settings
-paginate: 5                           # number of posts to show per page
+paginate: 20                           # number of posts to show per page
 paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf as is
 
 # Navigation settings
@@ -34,13 +31,16 @@ navigation:
     desc: Stuffs I write about
   - title: Projects
     url: /projects/
-    desc: Stuffs I like to do
+    desc: Stuffs I have worked on
   - title: Work
     url: /work/
     desc: Stuffs I hate to do
   - title: About
     url: /about/
     desc: Learn about me
+  - title: Meet me!
+    url: https://calendly.com/blaisemcrowly
+    desc: Set an appointment.
 
 # Used by Jekyll to recognize what is a post and what is a page
 defaults:
