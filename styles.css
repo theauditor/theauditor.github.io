@@ -1,4 +1,12 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
 :root {
+    /* Font Families */
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Noto Sans', sans-serif;
+    --font-devanagari: 'Noto Sans Devanagari', sans-serif;
+    
     /* Dark theme colors */
     --primary: #0a0a0a;
     --secondary: #121212;
@@ -54,12 +62,17 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--text);
     background: var(--primary);
     overflow-x: hidden;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: 600;
 }
 
 .container {
@@ -104,6 +117,7 @@ header {
     transition: color 0.3s ease;
     position: relative;
     padding: 0.5rem 0;
+    font-family: var(--font-primary);
 }
 
 .nav-links a::after {
@@ -221,6 +235,7 @@ header {
     line-height: 1.6;
     margin-bottom: 2rem;
     max-width: 600px;
+    font-family: var(--font-secondary);
 }
 
 .hero-tags {
@@ -239,6 +254,7 @@ header {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     transition: all 0.3s ease;
+    font-family: var(--font-primary);
 }
 
 .hero-tag:hover {
@@ -276,11 +292,13 @@ header {
     font-weight: 300;
     display: block;
     margin-bottom: 0.5rem;
+    font-family: var(--font-primary);
 }
 
 .hero-stat .stat-label {
     font-size: 0.9rem;
     color: var(--text);
+    font-family: var(--font-primary);
 }
 
 /* Sections */
@@ -322,6 +340,7 @@ h2:after {
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text);
+    font-family: var(--font-secondary);
 }
 
 .stats-grid {
@@ -349,11 +368,13 @@ h2:after {
     font-weight: 300;
     margin-bottom: 0.5rem;
     color: var(--text);
+    font-family: var(--font-primary);
 }
 
 .stat-label {
     font-size: 0.9rem;
     color: var(--text-secondary);
+    font-family: var(--font-primary);
 }
 
 /* Expertise Section */
@@ -424,6 +445,7 @@ h2:after {
     font-weight: 300;
     position: relative;
     padding-bottom: 1rem;
+    font-family: var(--font-primary);
 }
 
 .expertise-card h3::after {
@@ -452,6 +474,7 @@ h2:after {
     position: relative;
     padding-left: 1.5rem;
     transition: transform 0.3s ease, color 0.3s ease;
+    font-family: var(--font-primary);
 }
 
 .expertise-card li::before {
@@ -498,18 +521,21 @@ h2:after {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     font-weight: 400;
+    font-family: var(--font-primary);
 }
 
 .timeline-item h4 {
     color: var(--text);
     font-size: 1rem;
     margin-bottom: 1rem;
+    font-family: var(--font-primary);
 }
 
 .timeline-item .date {
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-bottom: 1rem;
+    font-family: var(--font-secondary);
 }
 
 .timeline-item p {
@@ -517,6 +543,7 @@ h2:after {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    font-family: var(--font-secondary);
 }
 
 .tech-stack {
@@ -531,6 +558,7 @@ h2:after {
     border-radius: 3px;
     font-size: 0.8rem;
     color: var(--text-secondary);
+    font-family: var(--font-primary);
 }
 
 /* Projects Section */
@@ -578,6 +606,7 @@ h2:after {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     color: var(--text);
+    font-family: var(--font-primary);
 }
 
 .project-card p {
@@ -585,6 +614,7 @@ h2:after {
     margin-bottom: 1.5rem;
     line-height: 1.6;
     flex-grow: 1;
+    font-family: var(--font-secondary);
 }
 
 .project-card .tech-stack {
@@ -601,6 +631,7 @@ h2:after {
     border-radius: 20px;
     font-size: 0.8rem;
     color: var(--text-secondary);
+    font-family: var(--font-primary);
 }
 
 /* Contact Section */
@@ -619,6 +650,7 @@ h2:after {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     font-weight: 400;
+    font-family: var(--font-primary);
 }
 
 .contact-info p {
@@ -626,6 +658,7 @@ h2:after {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     line-height: 1.8;
+    font-family: var(--font-secondary);
 }
 
 .client-types {
@@ -653,6 +686,7 @@ h2:after {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
+    font-family: var(--font-primary);
 }
 
 .contact-details i {
@@ -673,6 +707,7 @@ h2:after {
     border-radius: 5px;
     color: var(--text);
     font-size: 1rem;
+    font-family: var(--font-primary);
 }
 
 .contact-form textarea {
@@ -692,6 +727,7 @@ h2:after {
     transition: all 0.3s ease;
     border: 1px solid var(--card-border);
     margin-top: 2rem;
+    font-family: var(--font-primary);
 }
 
 .cta-button:hover {
@@ -727,6 +763,7 @@ footer {
     position: relative;
     padding: 0.5rem 0;
     transition: color 0.3s ease;
+    font-family: var(--font-primary);
 }
 
 .footer-links a::after {
@@ -760,6 +797,7 @@ footer {
     font-size: 1.5rem;
     transition: all 0.3s ease;
     position: relative;
+    font-family: var(--font-primary);
 }
 
 .social-links a::before {
@@ -822,7 +860,7 @@ footer {
 }
 
 .copyright-text span:nth-child(1) {
-    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-family: var(--font-devanagari);
     font-size: 1.1rem;
     color: var(--text);
     animation: flow 8s ease-in-out infinite;
@@ -1231,6 +1269,7 @@ body {
     border-right: 1px solid var(--card-border);
     height: 100%;
     white-space: nowrap;
+    font-family: var(--font-primary);
 }
 
 /* Remove any conflicting styles */
@@ -1435,18 +1474,21 @@ body {
     background: linear-gradient(135deg, var(--text), var(--text-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: var(--font-primary);
 }
 
 .book-subtitle {
     color: var(--text);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    font-family: var(--font-primary);
 }
 
 .book-isbn {
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-bottom: 1rem;
+    font-family: var(--font-secondary);
 }
 
 .book-rating {
@@ -1469,6 +1511,7 @@ body {
 .rating-text {
     color: var(--text-secondary);
     font-size: 0.9rem;
+    font-family: var(--font-secondary);
 }
 
 .book-description {
@@ -1476,6 +1519,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
+    font-family: var(--font-secondary);
 }
 
 .book-purchase {
@@ -1488,6 +1532,7 @@ body {
     font-size: 1.5rem;
     color: var(--text);
     font-weight: 300;
+    font-family: var(--font-primary);
 }
 
 .about-book {
@@ -1509,6 +1554,7 @@ body {
     color: var(--text);
     margin-bottom: 1.5rem;
     font-weight: 300;
+    font-family: var(--font-primary);
 }
 
 .about-book-text p {
@@ -1516,6 +1562,7 @@ body {
     line-height: 1.8;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
+    font-family: var(--font-secondary);
 }
 
 @media (max-width: 768px) {
