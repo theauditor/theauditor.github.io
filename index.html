@@ -79,6 +79,25 @@
     </script>
 </head>
 <body>
+    <div class="loading-overlay">
+        <div class="loading-container">
+            <div class="loading-grid">
+                <div class="loading-cell"></div>
+                <div class="loading-cell"></div>
+                <div class="loading-cell"></div>
+                <div class="loading-cell"></div>
+                <div class="loading-cell"></div>
+                <div class="loading-cell"></div>
+                <div class="loading-cell"></div>
+                <div class="loading-cell"></div>
+                <div class="loading-cell"></div>
+            </div>
+            <div class="loading-text">
+                <span class="loading-title">Blaise M Crowly</span>
+                <span class="loading-subtitle">Loading Systems</span>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container">
             <nav class="nav-links">
@@ -218,28 +237,31 @@
 
     <!-- Book Section -->
     <section id="book" class="book-section">
-        <div class="book-container">
-            <div class="book-image-section">
-                <img src="assets/book.avif" alt="Future Functions">
-            </div>
-            <div class="book-details-section">
-                <h2 class="book-title">Future Functions</h2>
-                <h3 class="book-subtitle">Conquering The Universe</h3>
-                <p class="book-isbn">ISBN: 978-81-975271-7-3</p>
-                <div class="book-rating">
-                    <div class="stars">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                    </div>
-                    <span class="rating-text">4.5 out of 5</span>
+        <div class="container">
+            <h2 class="section-title">My Book</h2>
+            <div class="book-container">
+                <div class="book-image-section">
+                    <img src="assets/book.avif" alt="Future Functions Book Cover" class="book-image">
                 </div>
-                <p class="book-description">Through engaging thought experiments, insightful stories, and refreshing perspectives, this book empowers you to deconstruct your beliefs and gain a deeper understanding of the world around you.</p>
-                <div class="book-purchase">
-                    <span class="book-price">Rs.350/-</span>
-                    <a href="https://lipsum.store/book/1/futurefunctions" class="primary-button" target="_blank">Buy Now</a>
+                <div class="book-details-section">
+                    <h2 class="book-title" style="text-align: left;">Future Functions</h2>
+                    <h3 class="book-subtitle">Conquering The Universe</h3>
+                    <p class="book-isbn">ISBN: 978-81-975271-7-3</p>
+                    <div class="book-rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <span class="rating-text">4.5 out of 5</span>
+                    </div>
+                    <p class="book-description">Through engaging thought experiments, insightful stories, and refreshing perspectives, this book empowers you to deconstruct your beliefs and gain a deeper understanding of the world around you.</p>
+                    <div class="book-purchase">
+                        <span class="book-price">Rs.350/-</span>
+                        <a href="https://lipsum.store/book/1/futurefunctions" class="primary-button" target="_blank">Buy Now</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -428,6 +450,13 @@
             }
             const currentTheme = body.classList.contains('dark-theme') ? 'dark-theme' : 'light-theme';
             localStorage.setItem('theme', currentTheme);
+        });
+
+        // Loading animation
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+            }, 2000);
         });
     </script>
 </body>
